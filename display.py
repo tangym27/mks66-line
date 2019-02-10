@@ -52,7 +52,7 @@ def save_extension( screen, fname ):
     remove(ppm_name)
 
 def display( screen ):
-    ppm_name = 'img.png'
+    ppm_name = 'pic.ppm'
     save_ppm( screen, ppm_name )
     p = Popen( ['display', ppm_name], stdin=PIPE, stdout = PIPE )
     p.communicate()

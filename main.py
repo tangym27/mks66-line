@@ -76,34 +76,37 @@ def bottom(offset, shape):
 # Testing all of the octants
 def test():
     print("1")
-    draw_line( 250 , 250 , 400,  300, screen, [255-color,color ,255])
+    draw_line( 250 , 250 , 400,  300, screen, [0,0,0])
 #o2
     print("2")
-    draw_line( 250 , 250 , 300,  400, screen, [255-color,color ,255])
+    draw_line( 250 , 250 , 300,  400, screen, [0,0,0])
 #o3
     print("3")
-    draw_line( 200 , 400 , 250,  250, screen, [255-color,color ,255])
+    draw_line( 200 , 400 , 250,  250, screen, [0,0,0])
 #o4
-    print("4")
-    draw_line( 250 , 250 , 50,  300, screen, [255-color,color ,255])
+    print("4\n\n")
+        # the broken one buddy
+
+    # draw_line( 50 , 300 , 250,  250, screen, [0,0,0])
+    draw_line( 250 , 250 , 100,  300, screen, [0,0,0])
 #o5
     print("5")
-    draw_line( 250 , 250 , 50,  200, screen, [255-color,color ,255])
+    draw_line( 250 , 250 , 50,  200, screen, [0,0,0])
 #o6
     print("6")
-    draw_line( 250 , 250 , 200,  100, screen, [255-color,color ,255])
-
+    draw_line( 250 , 250 , 200,  100, screen, [0,0,0])
 #o7
     print("7")
-    draw_line( 250 , 250 , 300,  50, screen, [255-color,color ,255])
+    draw_line( 250 , 250 , 300,  50, screen, [0,0,0])
 #o8
     print("8")
-    draw_line( 250 , 250 , 400,  200, screen, [255-color,color ,255])
+    draw_line( 250 , 250 , 400,  200, screen, [0,0,0])
     print ("undefined/0")
-    draw_line( 250 , 250 , 100,  250, screen, [255-color,color ,255])
-    draw_line( 250 , 250 , 450,  250, screen, [255-color,color ,255])
-    draw_line( 250 , 250 , 250,  450, screen, [255-color,color ,255])
-    draw_line( 250 , 450 , 250,  250, screen, [255-color,color ,255])
+    draw_line( 250 , 250 , 100,  250, screen, [0,0,0])
+    draw_line( 250 , 250 , 450,  250, screen, [0,0,0])
+    draw_line( 250 , 250 , 250,  450, screen, [0,0,0])
+    draw_line( 250 , 250 , 250,  50, screen, [0,0,0])
+
 
 
 
@@ -119,6 +122,8 @@ middle(353, "diamond")
 bottom(70, "x")
 bottom(213, "diamond")
 bottom(353, "x")
+
+test()
 
 display(screen)
 save_extension(screen, 'img.png')

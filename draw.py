@@ -14,12 +14,19 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             draw_line( x0, y1, x1, y0, screen, color)
 
     # handles reflection (octant 3-6)
-    if ((y1-y0) < 0):
+    if ((y1-y0) < 0 and m > 0):
         draw_line( x1, int(y1), x0, y0, screen, color)
+    if ((x1-x0) < 0 and (y1-y0) > 0 and m < 0 and m >= -1):
+        draw_line( x1, int(y1), x0, y0, screen, color)
+
+   # draw_line( 250 , 250 , 200,  300, screen, [0,0,0])
+
     if ((x1-x0 < 0) and (y1 -y0 == 0)):
         draw_line( x1, int(y1), x0, y0, screen, color)
     if ((y1-y0 < 0) and (x1 -x0 == 0)):
         draw_line( x1, int(y1), x0, y0, screen, color)
+
+    # draw_line( 250 , 250 , 50,  400, screen, [255-color,color ,255])
 
 
     A = y1 - y0
